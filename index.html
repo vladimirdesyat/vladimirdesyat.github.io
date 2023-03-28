@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=<device-width>, initial-scale=1.0">
+    <link rel="stylesheet" href="index.css">
+    <title>Calc</title>
+</head>
+<body>
+    <div class="flex-container">
+    <table class="calcBody">
+        <tr>
+            <td class="screen" colspan="3"><input class="screen" id="result" type="text" disabled></td>
+            <td class="del" colspan="2" value="Clear" onclick="clearScreen()">Clear</td>
+        </tr>
+        <tr>
+            <td><input type="button" value="(" onclick="screen('(')"/></td>
+            <td><input type="button" value=")" onclick="screen(')')"/></td>
+            <td><input type="button" value="C" onclick="deleteSymbol()"/></td>
+            <td><input type="button" value="%" onclick="persentage()"/></td>
+        </tr>
+        <tr>
+            <td><input type="button" value="7" onclick="screen('7')"/></td>
+            <td><input type="button" value="8" onclick="screen('8')"/></td>
+            <td><input type="button" value="9" onclick="screen('9')"/></td>
+            <td><input type="button" value="/" onclick="screen('/')"/></td>
+        </tr>
+        <tr>
+            <td><input type="button" value="4" onclick="screen('4')"/></td>
+            <td><input type="button" value="5" onclick="screen('5')"/></td>
+            <td><input type="button" value="6" onclick="screen('6')"/></td>
+            <td><input type="button" value="*" onclick="screen('*')"/></td>
+        </tr>
+        <tr>
+            <td><input type="button" value="1" onclick="screen('1')"/></td>
+            <td><input type="button" value="2" onclick="screen('2')"/></td>
+            <td><input type="button" value="3" onclick="screen('3')"/></td>
+            <td><input type="button" value="-" onclick="screen('-')"/></td>
+        </tr>
+        <tr>
+            <td><input type="button" value="." onclick="screen('.')"/></td>
+            <td><input type="button" value="0" onclick="screen('0')"/></td>
+            <td><input type="button" value="=" onclick="calculate()"/></td>
+            <td><input type="button" value="+" onclick="screen('+')"/></td>
+        </tr>
+    </table>
+    </div>
+    <script src="index.js"></script>
+</body>
+</html>
