@@ -9,7 +9,9 @@ function deleteSymbol(){
     let str = document.getElementById("result").value;
     document.getElementById("result").value = str.slice(0,-1);
 }
-function persentage(){
+
+// eval can be safe used by client, but not secure by server
+function calculate(){
     let str = document.getElementById("result").value;
     let arr;
     let temp;
@@ -18,13 +20,9 @@ function persentage(){
     } else{
         arr = str.match(/\d+|[^0-9]|\d+/g);
     }
-    temp = 100 - (arr[2] * 100 / arr[0]); 
-    document.getElementById("result").value = temp + '%';
-}
-
-// eval can be safe used by client, but not secure by server
-function calculate(){
-    let str = document.getElementById("result").value;
-    //.replace(/[^()*-+.%[0-9]]/, '')
-    document.getElementById("result").value = eval(str);    
+    let index = arr.indexOf('%');
+    temp = eval(str.replaceAll('%','/100*arr[index-3]'));
+    // .replace(/[^()*-+.%[0-9]]/, '')
+    // temp = 100 - (arr[2] * 100 / arr[0]); 
+    document.getElementById("result").value = temp;    
 }
