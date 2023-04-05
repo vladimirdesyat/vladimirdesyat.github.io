@@ -1,50 +1,34 @@
-@font-face {
-    font-family: Audiowide;
-    src: url(https://fonts.googleapis.com/css?family=Audiowide);
+.topbar{
+    background-color: blueviolet;
+    overflow: hidden;
 }
-
-td, input[type=button], .del {
-    cursor: pointer;
-    width: 40px;
-    height: 40px;
+.topbar a{
+    float: left;
+    color: aliceblue;
     text-align: center;
-    border-style: outset;
-    border-radius: 5px;
-    background-color: antiquewhite;
-    font-family: Audiowide;
+    padding: 14px 16px;
+    text-decoration: none;
+    font-size: 17px;
 }
-td:active, .del:active{
-    transform: translateY(1px);
+.topbar a:hover{
+    background-color: aliceblue;
+    color: black;
 }
-input[type=button]{
+.bottom{
+    position: absolute;
+    bottom: 0;
     width: 100%;
-    height: 100%;
-    border: none;
-    box-sizing: border-box;
-    font-size: xx-large;
+    height: 120px;
+    background-color: blueviolet;
 }
-.del{
-    background-color: red;
-    color: white;
+.bottom p, a {
+    color: aliceblue;
+    text-align: center;
+    text-decoration: none;
+    font-size: 17px;
+    padding-left: 10px;
 }
-.screen{
-    border-style: inset;
-    width: auto;
-    height: 40px;
-    background-color: greenyellow;
-    font-size: large;
-}
-.calcBody{
-    padding: 1%;
-    border-spacing: 5px;
-    border-style: outset;
-    border-radius: 5px;
-    background-color: gray;
-}
-.flex-container{
-    position: relative;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    margin-top: 171px;
+.text-desc{
+    text-align: center;
+    position: absolute;
 }

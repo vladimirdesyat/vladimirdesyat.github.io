@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="JSCalc.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css">
+    <title>JS Calc</title>
+</head>
+<body>
+    <nav>
+        <div class="topbar">
+            <a href="../index.html">Home</a>
+            <a href="JSCalc.html">JS Calc</a>
+            <a href="../ReactJSCalc/ReactJSCalc.html">ReactJS Calc</a>
+        </div>
+    </nav>
+    <div class="flex-container">
+        <table class="calcBody">
+            <tr>
+                <td class="screen" colspan="3"><input class="screen" id="result" type="text" disabled></td>
+                <td class="del" colspan="2" value="Clear" onclick="clearScreen()">Clear</td>
+            </tr>
+            <tr>
+                <td><input type="button" value="(" onclick="screen('(')"/></td>
+                <td><input type="button" value=")" onclick="screen(')')"/></td>
+                <td><input type="button" value="C" onclick="deleteSymbol()"/></td>
+                <td><input type="button" value="%" onclick="screen('%')"/></td>
+            </tr>
+            <tr>
+                <td><input type="button" value="7" onclick="screen('7')"/></td>
+                <td><input type="button" value="8" onclick="screen('8')"/></td>
+                <td><input type="button" value="9" onclick="screen('9')"/></td>
+                <td><input type="button" value="/" onclick="screen('/')"/></td>
+            </tr>
+            <tr>
+                <td><input type="button" value="4" onclick="screen('4')"/></td>
+                <td><input type="button" value="5" onclick="screen('5')"/></td>
+                <td><input type="button" value="6" onclick="screen('6')"/></td>
+                <td><input type="button" value="*" onclick="screen('*')"/></td>
+            </tr>
+            <tr>
+                <td><input type="button" value="1" onclick="screen('1')"/></td>
+                <td><input type="button" value="2" onclick="screen('2')"/></td>
+                <td><input type="button" value="3" onclick="screen('3')"/></td>
+                <td><input type="button" value="-" onclick="screen('-')"/></td>
+            </tr>
+            <tr>
+                <td><input type="button" value="." onclick="screen('.')"/></td>
+                <td><input type="button" value="0" onclick="screen('0')"/></td>
+                <td><input type="button" value="=" onclick="calculate()"/></td>
+                <td><input type="button" value="+" onclick="screen('+')"/></td>
+            </tr>
+        </table>
+        </div>
+        <br>
+        <div class="text-desc">
+            <p>
+                A simple JavaScript calculator made for educational purpose. Using custom DIY interface. Link for code inside public repository:<a style="color:violet;padding:5px;" href="https://github.com/vladimirdesyat/simple-calc">simple-calc</a>.
+            </p>
+        </div>        
+        <footer>
+            <div class="bottom">
+                <p style="font-size: 20px;">Contact me</p>
+                <p>
+                    <a href="https://github.com/vladimirdesyat"><i class="fa fa-github" ></i> Github</a>
+                    <a href="https://www.linkedin.com/in/vladimir-desiaterikov">LinkedIn</a>
+                    <a href="https://t.me/vladdesyat">Telegram</a>
+                </p>            
+            </div>        
+        </footer>
+        <script src="JSCalc.js"></script>
+</body>
+</html>
