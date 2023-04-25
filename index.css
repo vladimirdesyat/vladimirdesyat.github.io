@@ -1,3 +1,6 @@
+body{
+    margin: 0;
+}
 .topbar{
     background-color: blueviolet;
     overflow: hidden;

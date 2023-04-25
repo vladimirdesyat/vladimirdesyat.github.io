@@ -3,8 +3,7 @@
     src: url(https://fonts.googleapis.com/css?family=Audiowide);
 }
 html, body{
-    height: 100%;
-    min-height: 100%;
+    margin: 0;
 }
 .topbar{
     background-color: blueviolet;
